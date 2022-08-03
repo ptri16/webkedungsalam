@@ -27,16 +27,16 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">BERANDA <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="{{ url('/') }}">BERANDA <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#intro">SEJARAH</a>
+                    <a class="nav-link page-scroll" href="{{ url('/#intro') }}">SEJARAH</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#projects">DESTINASI</a>
+                    <a class="nav-link page-scroll" href="{{ url('/#projects') }}">DESTINASI</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll"  href="#services">PAKET WISATA</a>
+                    <a class="nav-link page-scroll"  href="{{ url('/#services') }}">PAKET WISATA</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link page-scroll" href="#callMe">CALL ME</a>

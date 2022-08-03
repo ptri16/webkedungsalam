@@ -24,3 +24,23 @@ Route::get('/testing', function () {
 Route::get('/booking', function() {
     return view('form');
 } );
+
+Route::get('/SendangArticle', function() {
+    return view('artikelsendang');
+} );
+
+Route::get('/PapanArticle', function() {
+    return view('artikelpapan');
+} );
+
+Route::get('/NgliyepArticle', function() {
+    return view('artikelngliyep');
+} );
+
+Route::get('/GoaArticle', function() {
+    return view('artikelgoa');
+} );
+
+Route::get('/Article', function() {
+    return view('artikel');
+} );
