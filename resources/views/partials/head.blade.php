@@ -25,6 +25,7 @@
         <link href="/css/swiper.css" rel="stylesheet">
         <link href="/css/magnific-popup.css" rel="stylesheet">
         <link href="/css/styles.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e0bbcdc900.js" crossorigin="anonymous"></script>
         
         <!-- Favicon  -->
         <link rel="icon" href="/img/Logo.png">
