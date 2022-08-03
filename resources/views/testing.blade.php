@@ -98,7 +98,7 @@
                     <a class="nav-link page-scroll" href="#contact">KONTAK</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="viewadmin/login.html">ADMIN</a>
+                    <a class="nav-link page-scroll" href="{{ url('/home') }}">ADMIN</a>
                 </li>
             </ul>
             <span class="nav-item social-icons">
