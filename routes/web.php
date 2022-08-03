@@ -44,3 +44,6 @@ Route::get('/GoaArticle', function() {
 Route::get('/Article', function() {
     return view('user/artikel');
 } );
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
