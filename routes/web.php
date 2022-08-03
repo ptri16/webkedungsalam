@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('user/dashboard');
 });
 
 Route::get('/testing', function () {
@@ -22,25 +22,25 @@ Route::get('/testing', function () {
 });
 
 Route::get('/booking', function() {
-    return view('form');
+    return view('user/form');
 } );
 
 Route::get('/SendangArticle', function() {
-    return view('artikelsendang');
+    return view('user/artikelsendang');
 } );
 
 Route::get('/PapanArticle', function() {
-    return view('artikelpapan');
+    return view('user/artikelpapan');
 } );
 
 Route::get('/NgliyepArticle', function() {
-    return view('artikelngliyep');
+    return view('user/artikelngliyep');
 } );
 
 Route::get('/GoaArticle', function() {
-    return view('artikelgoa');
+    return view('user/artikelgoa');
 } );
 
 Route::get('/Article', function() {
-    return view('artikel');
+    return view('user/artikel');
 } );
