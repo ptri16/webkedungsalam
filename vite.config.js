@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-const path = require('path')
+import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
-    // root: path.resolve(__dirname, 'src'),
     plugins: [
         laravel({
             input: [
@@ -12,14 +11,18 @@ export default defineConfig({
             ],
             refresh: true,
         }),
+        vue({
+            template: {
+                transformAssetUrls: {
+                    base: null,
+                    includeAbsolute: false,
+                },
+            },
+        }),
     ],
     resolve: {
         alias: {
-          '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
-        }
+            vue: 'vue/dist/vue.esm-bundler.js',
+        },
     },
-    server: {
-        port: 8080,
-        hot: true
-    }
 });

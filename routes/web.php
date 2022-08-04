@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Temporary Routes
 Route::get('/', function () {
     return view('user/dashboard');
 });
@@ -44,6 +45,29 @@ Route::get('/GoaArticle', function() {
 Route::get('/Article', function() {
     return view('user/artikel');
 } );
+
+// Admin routes
+Route::get('/adminDashboard', function() {
+    return view('admin/index');
+} );
+
+Route::get('/adwisata', function() {
+    return view('admin/adwisata');
+} );
+
+Route::get('/adartikel', function() {
+    return view('admin/adartikel');
+} );
+
+Route::get('/adadmin', function() {
+    return view('admin/adadmin');
+} );
+// End of temporary routes
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
