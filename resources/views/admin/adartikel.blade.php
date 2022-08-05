@@ -12,7 +12,7 @@
                             <div class="card-header">
                                 <h4 class="card-title">Artikel Wisata</h4>
                                 <div class="tambah">
-                                    <a href="tambahartikel.html">
+                                    <a href="{{ url('/addArtikel') }}">
                                         <button type="button" class="btn btn-rounded btn-primary">Tambah</button>
                                     </a>
                                 </div>

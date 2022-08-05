@@ -12,7 +12,7 @@
                             <div class="card-header">
                                 <h4 class="card-title">Paket Wisata</h4>
                                 <div class="tambah">
-                                    <a href="tambahwisata.php">
+                                    <a href="{{ url('/addWisata') }}">
                                         <button type="button" class="btn btn-rounded btn-primary">Tambah</button>
                                     </a>
                                 </div>

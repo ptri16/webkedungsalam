@@ -1,3 +1,5 @@
 Untuk path route
         {{ url('/') }}
 
+Path untuk admin
+localhost/DashboardAdmin

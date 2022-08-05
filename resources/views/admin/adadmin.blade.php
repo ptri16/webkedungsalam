@@ -12,7 +12,7 @@
                             <div class="card-header">
                                 <h4 class="card-title">Admin</h4>
                                 <div class="tambah"> 
-                                    <a href="tambahadmin.html">
+                                    <a href="{{ url('/addAdmin') }}">
                                         <button type="button" class="btn btn-rounded btn-primary">Tambah</button>
                                     </a>
                                 </div>

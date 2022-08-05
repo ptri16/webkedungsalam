@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Focus - Bootstrap Admin Dashboard </title>
+    <title>Admin Dashboard </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="/img/Logo.png">
     <link href="/vendor/admin/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
@@ -118,16 +118,16 @@
             <div class="quixnav-scroll">
                 <ul class="metismenu" id="menu">
                     <li class="nav-label first">Main Menu</li>
-                    <li><a href="{{ url('/adminDashboard') }}">
+                    <li><a href="{{ url('/DashboardAdmin') }}">
                         <i class="icon icon-world-2"></i><span class="nav-text">Dashboard</span></a>
                     </li>
-                    <li><a href="{{ url('/adwisata') }}">
+                    <li><a href="{{ url('/EditWisata') }}">
                         <i class="icon icon-form"></i><span class="nav-text">Paket Wisata</span></a>
                     </li>                 
-                    <li><a href="{{ url('/adartikel') }}">
+                    <li><a href="{{ url('/EditArtikel') }}">
                         <i class="icon icon-single-copy-06"></i><span class="nav-text">Artikel</span></a>
                     </li>                    
-                    <li><a href="{{ url('/adadmin') }}">
+                    <li><a href="{{ url('/EditAdmin') }}">
                         <i class="icon icon-single-04"></i><span class="nav-text">Admin</span></a>
                     </li>
                 </ul>
