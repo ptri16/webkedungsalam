@@ -26,14 +26,21 @@ Route::get('/GoaArticle', 'App\Http\Controllers\DashboardController@viewGoa');
 
 // Admin Route
 Route::get('/DashboardAdmin', 'App\Http\Controllers\AdminController@index'); //nnti ganti jadi post
-Route::get('/EditWisata', 'App\Http\Controllers\AdminController@menuWisata');
-Route::get('/EditArtikel', 'App\Http\Controllers\AdminController@menuArtikel');
-Route::get('/EditAdmin', 'App\Http\Controllers\AdminController@menuAdmin');
+Route::get('/DashboardWisata', 'App\Http\Controllers\AdminController@menuWisata');
+Route::get('/DashboardArtikel', 'App\Http\Controllers\AdminController@menuArtikel');
+Route::get('/Admin', 'App\Http\Controllers\AdminController@menuAdmin');
 Route::get('/addAdmin', 'App\Http\Controllers\AdminController@addAdmin');
+Route::get('/editAdmin', 'App\Http\Controllers\AdminController@editAdmin');
+
 
 // Edit artikel
-Route::get('/addWisata', 'App\Http\Controllers\ArticleController@addWisata');
-Route::get('/addArtikel', 'App\Http\Controllers\ArticleController@addArticle');
+Route::get('/addWisata', 'App\Http\Controllers\ArtikelController@addWisata');
+Route::get('/addArtikel', 'App\Http\Controllers\ArtikelController@addArticle');
+Route::get('/editArtikel', 'App\Http\Controllers\ArtikelController@editArticle');
+Route::get('/editWisata', 'App\Http\Controllers\ArtikelController@editWisata');
+
+
+
 
 // masih gak bisa dipakai 
 // Route::get('/', [DashboardController::class, 'dashboard']);
@@ -47,11 +54,6 @@ Route::get('/testing', function () {
     return view('testing');
 });
 
-
-// Admin routes
-
-
-
 // End of temporary routes
 
 Auth::routes();
@@ -61,3 +63,14 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/test-koneksi-database', function() {
+	try {
+		\DB::connection()->getPdo();
+
+		echo 'Sudah terkoneksi dengan database: ' . \DB::connection()->getDatabaseName();
+
+	} catch (\Exception $e) {
+		echo 'Belum terkoneksi database, error: ' . $e->getMessage();
+	}
+});

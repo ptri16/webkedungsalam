@@ -30,4 +30,9 @@ class AdminController extends Controller
     {
         return view('admin/tambahadmin');
     }
+
+    public function editAdmin()
+    {
+        return view('admin/editadmin');
+    }
 }

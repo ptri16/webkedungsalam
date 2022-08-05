@@ -16,4 +16,15 @@ class ArticleController extends Controller
     {
         return view('admin/tambahartikel');
     }
+
+    public function editArticle()
+    {
+        return view('admin/editartikel');
+    }
+
+    public function editWisata()
+    {
+        return view('admin/editwisata');
+    }
+
 }

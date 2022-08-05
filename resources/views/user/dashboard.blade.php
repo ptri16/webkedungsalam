@@ -15,7 +15,7 @@
                              SEJARAH
                         </div>
                         <h2>Sejarah Desa Kedungsalam</h2>
-                        <p>Launching a new company or developing the market position of an existing one can be quite an overwhelming processs at times.</p>
+                        <p>{{ $content }}</p>
                         <p class="testimonial-text">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>
                         <div class="testimonial-author">
                             <a class="btn-solid-lg page-scroll" href="{{ url('/Article') }}">Baca Selengkapnya >></a>

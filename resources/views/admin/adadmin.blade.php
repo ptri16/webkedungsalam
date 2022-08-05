@@ -35,7 +35,7 @@
                                                 <td>bahrum@gmail.com</td>
                                                 <td>+6289593213091</td>
                                                 <td>621K7Ua8ashhduh7AADA9EEOKh8oAHASUAKS...</td>
-                                                <td><span><a href="editadmin.html" class="mr-4" data-toggle="tooltip"
+                                                <td><span><a href="{{ url('/editAdmin') }}" class="mr-4" data-toggle="tooltip"
                                                             data-placement="top" title="Edit"><i
                                                                 class="fa fa-pencil color-muted"></i> </a><a
                                                             href="javascript:void()" data-toggle="tooltip"

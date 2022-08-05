@@ -7,10 +7,12 @@
     <body data-spy="scroll" data-target=".fixed-top">
         @include('partials.header') {{-- header --}}
 
-        @yield('content')   {{-- contents --}}
+        {{-- Content Section --}}
+        @yield('content')  
 
-        @include('partials.contact')    {{-- contact --}}
-        @include('partials.footer')     {{-- footer --}}
+        {{-- Contact & Footer Section --}}
+        @include('partials.contact')    
+        @include('partials.footer')     
     </body>
 
 </html>

@@ -35,7 +35,7 @@
                                                 <td> Bahrum Nisar</td>
                                                 <td>Jun 28,2018</td>
                                                 <td>bla bla bla</td>
-                                                <td><span><a href="editartikel.html" class="mr-4" data-toggle="tooltip"
+                                                <td><span><a href="{{ url('/editArtikel') }}" class="mr-4" data-toggle="tooltip"
                                                             data-placement="top" title="Edit"><i
                                                                 class="fa fa-pencil color-muted"></i> </a><a
                                                             href="javascript:void()" data-toggle="tooltip"

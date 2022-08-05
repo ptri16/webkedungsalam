@@ -25,6 +25,7 @@
                                                 <th scope="col">Nama</th>
                                                 <th scope="col">Kategori</th>
                                                 <th scope="col">Keterangan</th>
+                                                <th scope="col">Benefit</th>
                                                 <th scope="col">Harga</th>
                                                 <th scope="col">Actions</th>
                                             </tr>
@@ -33,9 +34,10 @@
                                             <tr>
                                                 <td>A</td>
                                                 <td>Pantai</td>
+                                                <td>Use this service pack to give your company the necessary impulse to become an industry leader</td>
                                                 <td>Transportasi, Penginapan, dll</td>
                                                 <td>250.000,00</td>
-                                                <td><span><a href="editwisata.html" class="mr-4" data-toggle="tooltip"
+                                                <td><span><a href="{{ url('/editWisata') }}" class="mr-4" data-toggle="tooltip"
                                                             data-placement="top" title="Edit"><i
                                                                 class="fa fa-pencil color-muted"></i> </a><a
                                                             href="javascript:void()" data-toggle="tooltip"

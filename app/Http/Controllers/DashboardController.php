@@ -8,7 +8,8 @@ class DashboardController extends Controller
 {
     public function dashboard()
     {
-        return view('user/dashboard');
+        $content = "Temporary Data";
+        return view('user/dashboard', ["content" => $content]);
     }
 
     public function booking()

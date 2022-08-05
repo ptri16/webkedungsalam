@@ -45,7 +45,7 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <a href="{{ url('/adminDashboard') }}" class="brand-logo">
+            <a href="{{ url('/DashboardAdmin') }}" class="brand-logo">
                 <img class="logo-abbr" src="/img/logoaja.png" alt="">
                 <img class="logo-compact" src="/img/textlogo.png" alt="">
                 <img class="brand-title" src="/img/textlogo.png" alt="">
@@ -121,13 +121,13 @@
                     <li><a href="{{ url('/DashboardAdmin') }}">
                         <i class="icon icon-world-2"></i><span class="nav-text">Dashboard</span></a>
                     </li>
-                    <li><a href="{{ url('/EditWisata') }}">
+                    <li><a href="{{ url('/DashboardWisata') }}">
                         <i class="icon icon-form"></i><span class="nav-text">Paket Wisata</span></a>
                     </li>                 
-                    <li><a href="{{ url('/EditArtikel') }}">
+                    <li><a href="{{ url('/DashboardArtikel') }}">
                         <i class="icon icon-single-copy-06"></i><span class="nav-text">Artikel</span></a>
                     </li>                    
-                    <li><a href="{{ url('/EditAdmin') }}">
+                    <li><a href="{{ url('/Admin') }}">
                         <i class="icon icon-single-04"></i><span class="nav-text">Admin</span></a>
                     </li>
                 </ul>

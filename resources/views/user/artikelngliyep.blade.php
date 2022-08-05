@@ -21,8 +21,7 @@
                 <div class="col-lg-7">
                     <div class="image-container">
                         <img class="img-fluid" src="/img/intro-office.jpg" alt="alternative">
-                    </div> <!-- end of image-container -
-                        ->
+                    </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-5">
                     <div class="text-container">

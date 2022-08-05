@@ -3,3 +3,8 @@ Untuk path route
 
 Path untuk admin
 localhost/DashboardAdmin
+
+1. Tanya bagian mana aja yang bagian mana aja yang bisa diedit isinya (setiap bagian dengan detail)
+2. Tambah checkbox untuk bagian paket wisata, untuk nentuin benefitnya
+3. Untuk artikel yang ngedit ini ngambil data dari database
+4. Cara ganti methodnya ke post kalau misalnya pakai href. (tapi href itu auto get)

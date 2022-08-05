@@ -18,7 +18,7 @@
                                 <input type="text" class="form-control input-default" id="penulis" placeholder="Penulis" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control input-default" id="penulis" placeholder="Isi Artikel" required>
+                                <textarea class="form-control" id="konten" rows="3" placeholder="Isi Artikel" required></textarea>
                             </div>
                             <div class="form-group">
                                 <div class="summernote"></div>

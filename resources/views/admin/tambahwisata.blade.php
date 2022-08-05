@@ -30,6 +30,10 @@
                                 <input type="number" class="form-control input-default" id="harga" placeholder="Harga">
                             </div>
                             <div class="form-group">
+                                <textarea class="form-control" id="Keterangan" rows="3" placeholder="Keterangan" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
                                 <button type="submit" class="btn btn-primary" style="padding:5px 15px 5px 15px;">Submit</button>
                             </div>
                         </form>

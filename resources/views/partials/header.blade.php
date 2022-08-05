@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-container">
-                            <h1 class="slogan"><span id="js-rotating">Discover The World, Kedungsalam Toursm</span></h1>
+                            <h1 class="slogan"><span id="js-rotating">Discovery, Kedungsalam</span></h1>
                             <p class="p-heading p-large">Aria is a top consultancy company specializing in business growth using online marketing and conversion optimization tactics</p>
                             <a class="btn-solid-lg page-scroll" href="index.php#services">START TOUR</a>
                         </div>
