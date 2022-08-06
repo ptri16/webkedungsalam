@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -56,13 +58,14 @@ Route::get('/testing', function () {
 
 // End of temporary routes
 
-Auth::routes();
+// Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+// Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'redirect']);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/DashboardAdmin', [App\Http\Controllers\HomeController::class, 'index'])->name('DashboardAdmin');
 
 Route::get('/test-koneksi-database', function() {
 	try {
@@ -73,4 +76,14 @@ Route::get('/test-koneksi-database', function() {
 	} catch (\Exception $e) {
 		echo 'Belum terkoneksi database, error: ' . $e->getMessage();
 	}
+});
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
 });

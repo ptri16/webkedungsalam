@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -21,8 +22,21 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    
+    public function redirect()
     {
-        return view('home');
+        return view('layouts.defaultAdmin');
+    }
+
+    public function index()
+    {   
+        if (Auth::check()) {
+            # code...
+            return redirect('home');
+            
+        }
+            return view('user.dashboard');
+        
+        
     }
 }

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 
+{{-- @extends('layouts.app') --}}
 <html lang="en">
 
 <head>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -75,13 +77,26 @@
                                 </span>
                                 <div class="dropdown-menu p-0 m-0">
                                     <form>
-                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                        <input class="form-control" type="search" placeholder="Search"
+                                            aria-label="Search">
                                     </form>
                                 </div>
                             </div>
                         </div>
 
-                        <ul class="navbar-nav header-right">
+                        <ul class="navbar-nav ms-auto">
+                            <!-- Authentication Links -->
+
+                            {{-- @if (Route::has('login'))
+                            <x-app-layout>
+                            </x-app-layout>
+                            @endif --}}
+
+
+
+
+
+
                             <li class="nav-item dropdown header-profile">
                                 <a class="nav-link" href="#" role="button" data-toggle="dropdown">
                                     <i class="mdi mdi-account"></i>
@@ -110,8 +125,8 @@
             Header end ti-comment-alt
         ***********************************-->
 
-        
-            <!--**********************************
+
+        <!--**********************************
             Sidebar start
         ***********************************-->
         <div class="quixnav">
@@ -119,16 +134,16 @@
                 <ul class="metismenu" id="menu">
                     <li class="nav-label first">Main Menu</li>
                     <li><a href="{{ url('/DashboardAdmin') }}">
-                        <i class="icon icon-world-2"></i><span class="nav-text">Dashboard</span></a>
+                            <i class="icon icon-world-2"></i><span class="nav-text">Dashboard</span></a>
                     </li>
                     <li><a href="{{ url('/DashboardWisata') }}">
-                        <i class="icon icon-form"></i><span class="nav-text">Paket Wisata</span></a>
-                    </li>                 
+                            <i class="icon icon-form"></i><span class="nav-text">Paket Wisata</span></a>
+                    </li>
                     <li><a href="{{ url('/DashboardArtikel') }}">
-                        <i class="icon icon-single-copy-06"></i><span class="nav-text">Artikel</span></a>
-                    </li>                    
+                            <i class="icon icon-single-copy-06"></i><span class="nav-text">Artikel</span></a>
+                    </li>
                     <li><a href="{{ url('/Admin') }}">
-                        <i class="icon icon-single-04"></i><span class="nav-text">Admin</span></a>
+                            <i class="icon icon-single-04"></i><span class="nav-text">Admin</span></a>
                     </li>
                 </ul>
             </div>
@@ -181,7 +196,7 @@
 
 
     <script src="/js/admin/dashboard/dashboard-2.js"></script>
-    
+
     <!-- Datatable -->
     <script src="/vendor/admin/datatables/js/jquery.dataTables.min.js"></script>
     <script src="/js/admin/plugins-init/datatables.init.js"></script>
