@@ -58,7 +58,7 @@
                 </li>
                 
 
-                @auth
+                {{-- @auth --}}
                 
                 
 
@@ -68,7 +68,7 @@
                     <a class="nav-link page-scroll" href="{{ url('/DashboardAdmin') }}">ADMIN</a>
                 </li>
 
-                @endauth
+                {{-- @endauth --}}
 
                 
             </ul>

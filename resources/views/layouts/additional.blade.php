@@ -5,7 +5,7 @@
     </head>
 
     <body data-spy="scroll" data-target=".fixed-top">
-        @include('partials.header') {{-- header --}}
+        @include('partials.addHeader') {{-- header --}}
 
         @yield('content')   {{-- contents --}}
 
