@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controller\ArtikelController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,18 +27,20 @@ Route::get('/GoaArticle', 'App\Http\Controllers\DashboardController@viewGoa');
 // Admin Route
 Route::get('/DashboardAdmin', 'App\Http\Controllers\AdminController@index'); //nnti ganti jadi post
 Route::get('/DashboardWisata', 'App\Http\Controllers\AdminController@menuWisata');
-Route::get('/DashboardArtikel', 'App\Http\Controllers\AdminController@menuArtikel');
+Route::get('/DashboardArtikel', 'App\Http\Controllers\ArtikelController@displayArtikel');
 Route::get('/Admin', 'App\Http\Controllers\AdminController@menuAdmin');
 Route::get('/addAdmin', 'App\Http\Controllers\AdminController@addAdmin');
 Route::get('/editAdmin', 'App\Http\Controllers\AdminController@editAdmin');
 
 
 // Edit artikel
-Route::get('/addWisata', 'App\Http\Controllers\ArtikelController@addWisata');
+Route::get('/addWisata', 'App\Http\Controllers\WisataController@addWisata');
 Route::get('/addArtikel', 'App\Http\Controllers\ArtikelController@addArticle');
 Route::get('/editArtikel', 'App\Http\Controllers\ArtikelController@editArticle');
-Route::get('/editWisata', 'App\Http\Controllers\ArtikelController@editWisata');
+Route::post('/add/artikel', 'App\Http\Controllers\ArtikelController@createArtikel');
+Route::get('/updateArtikel', 'App\Http\Controllers\ArtikelController@updateArtikel');
 
+Route::get('/editWisata', 'App\Http\Controllers\WisataController@editWisata');
 
 
 

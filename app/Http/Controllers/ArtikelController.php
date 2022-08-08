@@ -1,15 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\artikel;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
-class ArticleController extends Controller
+class ArtikelController extends Controller
 {
-    
-    public function addWisata()
+    public function __construct()
     {
-        return view('admin/tambahwisata');
+        $this->artikel = new artikel;
     }
 
     public function addArticle()
@@ -17,14 +17,33 @@ class ArticleController extends Controller
         return view('admin/tambahartikel');
     }
 
-    public function editArticle()
+    public function editArticle(Request $request)
     {
-        return view('admin/editartikel');
+        $data = artikel::find($request->id);
+        return view('admin/editartikel', ['data'=>$data]);
     }
 
-    public function editWisata()
+    public function displayArtikel()
     {
-        return view('admin/editwisata');
+        $data = $this->artikel->getAllData();
+        return view('admin/adartikel', ["data"=>$data]);
     }
+
+    public function createArtikel(Request $request)
+    {
+        $artikel = artikel::create([
+            'judul' => $request->judul,
+            'penulis' => $request->penulis,
+            'konten' => $request->konten
+        ]);
+        return redirect('/DashboardArtikel');
+    }
+
+    public function updateArtikel(Request $request)
+    {
+        $artikel = artikel::find($request);
+        var_dump($artikel);
+    }
+
 
 }

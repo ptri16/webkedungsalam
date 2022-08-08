@@ -11,21 +11,24 @@
                         <h4>Edit Artikel</h4>
                         <span>Silahkan mengisi data dibawah ini!</span>
                         <form action="" class="form-artikel" style="margin-top:30px;">
-                            <div class="form-group">
-                                <input type="text" class="form-control input-default" id="judul" placeholder="Judul Artikel" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control input-default" id="penulis" placeholder="Penulis" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id="konten" rows="3" placeholder="Isi Artikel" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <div class="summernote"></div>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary" style="padding:5px 15px 5px 15px;">Submit</button>
-                            </div>
+                            @foreach ($data as $item)
+                                <div class="form-group">
+                                    <input type="text" class="form-control input-default" id="judul" placeholder="Judul Artikel" value="{{ $item -> judul }}" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control input-default" id="penulis" placeholder="Penulis" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="konten" rows="3" placeholder="Isi Artikel" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <div class="summernote"></div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary" style="padding:5px 15px 5px 15px;">Submit</button>
+                                </div>
+                            @endforeach
+                            
                         </form>
                     </div>
                 </div>
