@@ -11,11 +11,11 @@
     <title>Admin Dashboard </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="/img/Logo.png">
-    <link href="/vendor/admin/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
-    <link href="/vendor/admin/chartist/css/chartist.min.css" rel="stylesheet">
-    <link href="/css/admin/style.css" rel="stylesheet">
+    <link href="../../vendor/admin/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <link href="../../vendor/admin/chartist/css/chartist.min.css" rel="stylesheet">
+    <link href="../../css/admin/style.css" rel="stylesheet">
     <!-- Datatable -->
-    <link href="/vendor/admin/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../../vendor/admin/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e0bbcdc900.js" crossorigin="anonymous"></script>
 
 
@@ -93,11 +93,9 @@
 
 
 
-
+                                
                             <li class="nav-item dropdown header-profile">
-                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
-                                    <i class="mdi mdi-account"></i>
-                                </a>
+                                
                                 @if (Route::has('login'))
                                 @auth
                                 <x-app-layout>
@@ -181,30 +179,22 @@
 
 
     </div>
-    <!--**********************************
-        Main wrapper end
-    ***********************************-->
 
-    <!--**********************************
-        Scripts
-    ***********************************-->
-    <!-- Required vendors -->
-    <script src="{{ asset('vendor/admin/global/global.min.js') }}"></script>
-    <script src="{{ asset('js/admin/quixnav-init.js') }}"></script>
-    <script src="{{ asset('js/admin/custom.min.js') }}"></script>
+    <script src="../../vendor/global/global.min.js"></script>
+    <script src="../../js/admin/quixnav-init.js"></script>
+    <script src="../../js/admin/custom.min.js"></script>
 
-    {{-- <script src="{{ asset('js/admin/plugins-init/chartist.min.js') }}"></script> --}}
+    <script src="../../vendor/chartist/js/chartist.min.js"></script>
 
-    <script src="{{ asset('vendor/admin/moment/moment.min.js') }}"></script>
-    <script src="{{ asset('vendor/admin/pg-calendar/js/pignose.calendar.min.js') }}"></script>
+    <script src="../../vendor/moment/moment.min.js"></script>
+    <script src="../../vendor/pg-calendar/js/pignose.calendar.min.js"></script>
 
 
-    <script src="{{ asset('js/admin/dashboard/dashboard-2.js') }}"></script>
-
+    <script src="../../js/admin/dashboard/dashboard-2.js"></script>
+    
     <!-- Datatable -->
-    <script src="{{ asset('vendor/admin/datatables/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('js/admin/plugins-init/datatables.init.js') }}"></script>
-    <!-- Circle progress -->
+    <script src="../../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../js/admin/plugins-init/datatables.init.js"></script>
 
 </body>
 
