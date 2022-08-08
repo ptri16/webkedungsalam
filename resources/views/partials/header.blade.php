@@ -56,13 +56,13 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contact">KONTAK</a>
                 </li>
-                @if (Route::has('login'))
+                
 
                 @auth
                 
                 
 
-                @else
+                
 
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="{{ url('/DashboardAdmin') }}">ADMIN</a>
@@ -70,7 +70,6 @@
 
                 @endauth
 
-                @endif
                 
             </ul>
             <span class="nav-item social-icons">

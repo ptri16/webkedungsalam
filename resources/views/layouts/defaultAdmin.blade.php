@@ -87,10 +87,7 @@
                         <ul class="navbar-nav ms-auto">
                             <!-- Authentication Links -->
 
-                            {{-- @if (Route::has('login'))
-                            <x-app-layout>
-                            </x-app-layout>
-                            @endif --}}
+                            
 
 
 
@@ -101,6 +98,13 @@
                                 <a class="nav-link" href="#" role="button" data-toggle="dropdown">
                                     <i class="mdi mdi-account"></i>
                                 </a>
+                                @if (Route::has('login'))
+                                @auth
+                                <x-app-layout>
+                                </x-app-layout>
+                                @endauth
+                                
+                                @endif
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a href="./app-profile.html" class="dropdown-item">
                                         <i class="icon-user"></i>
@@ -185,21 +189,21 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="/vendor/admin/global/global.min.js"></script>
-    <script src="/js/admin/quixnav-init.js"></script>
-    <script src="/js/admin/custom.min.js"></script>
+    <script src="{{ asset('vendor/admin/global/global.min.js') }}"></script>
+    <script src="{{ asset('js/admin/quixnav-init.js') }}"></script>
+    <script src="{{ asset('js/admin/custom.min.js') }}"></script>
 
-    <script src="/vendor/admin/chartist/js/chartist.min.js"></script>
+    {{-- <script src="{{ asset('js/admin/plugins-init/chartist.min.js') }}"></script> --}}
 
-    <script src="/vendor/admin/moment/moment.min.js"></script>
-    <script src="/vendor/admin/pg-calendar/js/pignose.calendar.min.js"></script>
+    <script src="{{ asset('vendor/admin/moment/moment.min.js') }}"></script>
+    <script src="{{ asset('vendor/admin/pg-calendar/js/pignose.calendar.min.js') }}"></script>
 
 
-    <script src="/js/admin/dashboard/dashboard-2.js"></script>
+    <script src="{{ asset('js/admin/dashboard/dashboard-2.js') }}"></script>
 
     <!-- Datatable -->
-    <script src="/vendor/admin/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="/js/admin/plugins-init/datatables.init.js"></script>
+    <script src="{{ asset('vendor/admin/datatables/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('js/admin/plugins-init/datatables.init.js') }}"></script>
     <!-- Circle progress -->
 
 </body>

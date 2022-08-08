@@ -52,9 +52,9 @@ Route::get('/editWisata', 'App\Http\Controllers\ArtikelController@editWisata');
 // Temporary Routes
 
 
-Route::get('/testing', function () {
-    return view('testing');
-});
+// Route::get('/testing', function () {
+//     return view('testing');
+// });
 
 // End of temporary routes
 

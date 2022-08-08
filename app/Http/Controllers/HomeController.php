@@ -33,6 +33,7 @@ class HomeController extends Controller
         if (Auth::check()) {
             # code...
             return redirect('home');
+            // return view('dashboard') ;
             
         }
             return view('user.dashboard');
