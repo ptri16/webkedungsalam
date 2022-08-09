@@ -1,6 +1,7 @@
 @extends('layouts.default')
-
 @section('content')
+@include('partials.cover')
+
     <!-- Intro Sejarah Kedungsalam -->
     <div id="intro" class="basic-1">
         <div class="container">
