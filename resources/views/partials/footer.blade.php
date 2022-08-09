@@ -12,12 +12,12 @@
                     <div class="text-container">
                         <h4>Links</h4>
                         <ul class="list-unstyled li-space-lg white">
-                            <li>
+                            {{-- <li>
                                 <a class="white" href="terms-conditions.php">Syarat & Ketentuan</a>
                             </li>
                             <li>
                                 <a class="white" href="privacy-policy.php">Kebijakan Privasi</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -25,7 +25,7 @@
                     <div class="text-container">
                         <h4>Tools</h4>
                         <ul class="list-unstyled li-space-lg">
-                            <li>
+                            {{-- <li>
                                 <a class="white" href="#your-link">businessgrowth.com</a>
                             </li>
                             <li>
@@ -33,7 +33,7 @@
                             </li>
                             <li class="media">
                                 <a class="white" href="#your-link">optimizer.net</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -41,7 +41,7 @@
                     <div class="text-container">
                         <h4>Partners</h4>
                         <ul class="list-unstyled li-space-lg">
-                            <li>
+                            {{-- <li>
                                 <a class="white" href="#your-link">unicorns.com</a>
                             </li>
                             <li>
@@ -49,7 +49,7 @@
                             </li>
                             <li>
                                 <a class="white" href="#your-link">association.gov</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -59,7 +59,7 @@
     <!-- end of footer -->
 
 
-    <!-- Copyright -->
+    {{-- <!-- Copyright -->
     <div class="copyright">
         <div class="container">
             <div class="row">
@@ -69,7 +69,7 @@
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
     </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
+    <!-- end of copyright --> --}}
 
         <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->

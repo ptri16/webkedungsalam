@@ -56,9 +56,21 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contact">KONTAK</a>
                 </li>
+                
+
+                {{-- @auth --}}
+                
+                
+
+                
+
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{{ url('/home') }}">ADMIN</a>
+                    <a class="nav-link page-scroll" href="{{ url('/DashboardAdmin') }}">ADMIN</a>
                 </li>
+
+                {{-- @endauth --}}
+
+                
             </ul>
             <span class="nav-item social-icons">
                 <span class="fa-stack">

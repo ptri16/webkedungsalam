@@ -41,6 +41,9 @@
                 <!-- <li class="nav-item">
                     <a class="nav-link page-scroll" href="#callMe">CALL ME</a>
                 </li> -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{{ url('/DashboardAdmin') }}">ADMIN</a>
+                </li>
 
                 <!-- Dropdown Menu -->          
                 <li class="nav-item dropdown">
@@ -57,7 +60,7 @@
                     <a class="nav-link page-scroll" href="#contact">KONTAK</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{{ url('/home') }}">ADMIN</a>
+                    <a class="nav-link page-scroll" href="{{ url('/DashboardAdmin') }}">ADMIN</a>
                 </li>
             </ul>
             <span class="nav-item social-icons">
