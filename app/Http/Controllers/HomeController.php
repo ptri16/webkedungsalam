@@ -25,7 +25,7 @@ class HomeController extends Controller
     
     public function redirect()
     {
-        return view('layouts.defaultAdmin');
+        return view('admin/index');
     }
 
     public function index()

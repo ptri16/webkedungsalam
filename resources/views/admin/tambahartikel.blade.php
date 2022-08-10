@@ -10,7 +10,7 @@
                     <div class="col-lg-12">  
                         <h4>Buat Artikel Baru</h4>
                         <span>Silahkan mengisi data dibawah ini!</span>
-                        <form action="/add/artikel" method="POST" class="form-artikel" style="margin-top:30px;">
+                        <form action="/artikel/add" method="POST" class="form-artikel" style="margin-top:30px;">
                             @csrf
                             <div class="form-group">
                                 <input type="text" class="form-control input-default" id="judul" name="judul" placeholder="Judul Artikel" required>

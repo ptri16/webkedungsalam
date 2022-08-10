@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class AdminController extends Controller
 {
@@ -23,7 +24,10 @@ class AdminController extends Controller
 
     public function menuAdmin()
     {
-        return view('admin/adadmin');
+        
+        $users = user::all();
+        return view('admin/adadmin', compact('users'));
+        // return view('admin/adadmin');
     }
 
     public function addAdmin()

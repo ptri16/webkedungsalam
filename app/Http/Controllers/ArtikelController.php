@@ -17,12 +17,6 @@ class ArtikelController extends Controller
         return view('admin/tambahartikel');
     }
 
-    public function editArticle(Request $request)
-    {
-        $data = artikel::find($request->id);
-        return view('admin/editartikel', ['data'=>$data]);
-    }
-
     public function displayArtikel()
     {
         $data = $this->artikel->getAllData();
@@ -39,10 +33,34 @@ class ArtikelController extends Controller
         return redirect('/DashboardArtikel');
     }
 
-    public function updateArtikel(Request $request)
+    public function updateArtikel($id)
     {
-        $artikel = artikel::find($request);
-        var_dump($artikel);
+        $results = DB::select('select * from artikels where id = :id', ['id' => $id]);
+        return view('admin/editartikel', ['data'=>$results]);
+        
+    }
+
+    public function editArtikel(Request $request)
+    {
+        $judul = $request->judul;
+        $penulis = $request->penulis;
+        $konten = $request -> konten;
+        $id = $request -> id;
+        $action = artikel::where('id', $id)
+            ->first()
+            ->update([
+            'judul' => $judul,
+            'penulis' => $penulis,
+            'konten' => $konten
+        ]);
+        return redirect('/DashboardArtikel');
+    }
+
+    public function deleteArtikel($id)
+    {
+        $artikel = artikel::find($id);
+        $artikel->delete();
+        return redirect('/DashboardArtikel');
     }
 
 

@@ -34,11 +34,11 @@
                                                     <td>{{ $item->judul }}</td>
                                                     <td>{{ $item->penulis }}</td>
                                                     <td>{{ $item->konten }}</td>
-                                                    <td><span><a href="{{action('ArtikelController@updateArtikel', $item->id) }}" class="mr-4" data-toggle="tooltip"
+                                                    <td><span><a href="{{route('update', ['id' => $item->id])}}" class="mr-4" data-toggle="tooltip"
                                                             data-placement="top" title="Edit"><i
                                                                 class="fa fa-pencil color-muted"></i> </a>
                                                             <a
-                                                            href="javascript:void()" data-toggle="tooltip"
+                                                            href="{{route('delete', ['id' => $item->id])}}" data-toggle="tooltip"
                                                             data-placement="top" title="Close"><i
                                                                 class="fa fa-close color-danger"></i></a></span>
                                                     </td>

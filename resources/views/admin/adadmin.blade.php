@@ -25,16 +25,17 @@
                                                 <th scope="col">Nama</th>
                                                 <th scope="col">Email</th>
                                                 <th scope="col">Nomor Handphone</th>
-                                                <th scope="col">Password</th>
+                                                {{-- <th scope="col">Password</th> --}}
                                                 <th scope="col">Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                             @foreach($users as $user)
                                             <tr>
-                                                <td>Bahrum Nisar</td>
-                                                <td>bahrum@gmail.com</td>
+                                                <td>{{ $user->name }}</td>
+                                                <td>{{ $user->email }}</td>
                                                 <td>+6289593213091</td>
-                                                <td>621K7Ua8ashhduh7AADA9EEOKh8oAHASUAKS...</td>
+                                                {{-- <td>{{ $user->password }}</td> --}}
                                                 <td><span><a href="{{ url('/editAdmin') }}" class="mr-4" data-toggle="tooltip"
                                                             data-placement="top" title="Edit"><i
                                                                 class="fa fa-pencil color-muted"></i> </a><a
@@ -43,6 +44,7 @@
                                                                 class="fa fa-close color-danger"></i></a></span>
                                                 </td>
                                             </tr>
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>
