@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controller\ArtikelController;
+use App\Http\Controller\WisataController;
+use App\Http\Controller\DashboardController;
 
 use App\Http\Controllers;
 
@@ -20,26 +22,23 @@ use App\Http\Controllers;
 //Fix Routes 
 
 // User Routes
-Route::get('/', 'App\Http\Controllers\DashboardController@dashboard');
-Route::get('/booking', 'App\Http\Controllers\DashboardController@booking');
+Route::get('/', 'DashboardController@dashboard');
+Route::get('/booking', 'DashboardController@booking');
 // Artikel
-Route::get('/History', 'App\Http\Controllers\DashboardController@viewSendang');
-Route::get('/SendangArticle', 'App\Http\Controllers\DashboardController@viewSendang');
-Route::get('/PapanArticle', 'App\Http\Controllers\DashboardController@viewPapan');
-Route::get('/NgliyepArticle', 'App\Http\Controllers\DashboardController@viewNgliyep');
-Route::get('/GoaArticle', 'App\Http\Controllers\DashboardController@viewGoa');
+Route::get('/History', 'DashboardController@viewSendang');
+Route::get('/SendangArticle', 'DashboardController@viewSendang');
+Route::get('/PapanArticle', 'DashboardController@viewPapan');
+Route::get('/NgliyepArticle', 'DashboardController@viewNgliyep');
+Route::get('/GoaArticle', 'DashboardController@viewGoa');
 
 // Admin Route
-// Route::get('/DashboardAdmin', 'App\Http\Controllers\AdminController@index'); 
-Route::get('/DashboardWisata', 'App\Http\Controllers\AdminController@menuWisata');
+Route::get('/DashboardWisata', 'WisataController@displayWisata');
 Route::get('/DashboardArtikel', 'ArtikelController@displayArtikel');
 Route::get('/Admin', 'App\Http\Controllers\AdminController@menuAdmin');
 Route::get('/addAdmin', 'App\Http\Controllers\AdminController@addAdmin');
 Route::get('/editAdmin', 'App\Http\Controllers\AdminController@editAdmin');
 
-
-// Edit artikel
-Route::get('/addWisata', 'App\Http\Controllers\WisataController@addWisata');
+// artikel
 Route::get('/addArtikel', 'ArtikelController@addArticle');
 Route::post('/artikel/add', 'ArtikelController@createArtikel');
 Route::get('artikel/update/{id}', [
@@ -52,25 +51,25 @@ Route::get('artikel/delete/{id}', [
             'uses'=>'ArtikelController@deleteArtikel'
             ]);
 
-Route::get('/editWisata', 'App\Http\Controllers\WisataController@editWisata');
+// Wisata
+Route::get('/addWisata', 'WisataController@addWisata');
+Route::post('/wisata/add', 'WisataController@createWisata');
+Route::get('/wisata/edit', 'WisataController@updatetWisata');
+Route::get('wisata/update/{id}', [
+            'as'=> 'upWisata',
+            'uses'=>'WisataController@updateWisata'
+            ]);
+Route::get('wisata/delete/{id}', [
+            'as'=> 'delWisata',
+            'uses'=>'WisataController@deleteWisata'
+            ]);
+Route::get('wisata/display/{id}', [
+            'as'=> 'disWisata',
+            'uses'=>'WisataController@pickWisata'
+            ]);
+Route::post('/booking/add', [App\Http\Controllers\AdminController::class, 'uploadForm'])->name('daftarPesanan');
 
 
-
-// masih gak bisa dipakai 
-// Route::get('/', [DashboardController::class, 'dashboard']);
-
-
-
-// Temporary Routes
-
-
-// Route::get('/testing', function () {
-//     return view('testing');
-// });
-
-// End of temporary routes
-
-// Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 // Auth::routes();
 
 

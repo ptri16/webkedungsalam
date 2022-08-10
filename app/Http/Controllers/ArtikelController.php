@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\artikel;
+use App\Models\displayWisata;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
@@ -10,6 +11,7 @@ class ArtikelController extends Controller
     public function __construct()
     {
         $this->artikel = new artikel;
+        $this->display = new displayWisata;
     }
 
     public function addArticle()
@@ -20,7 +22,8 @@ class ArtikelController extends Controller
     public function displayArtikel()
     {
         $data = $this->artikel->getAllData();
-        return view('admin/adartikel', ["data"=>$data]);
+        $disp = $this->display::all();
+        return view('admin/adartikel', ["data"=>$data, "disp"=>$disp]);
     }
 
     public function createArtikel(Request $request)
@@ -61,6 +64,11 @@ class ArtikelController extends Controller
         $artikel = artikel::find($id);
         $artikel->delete();
         return redirect('/DashboardArtikel');
+    }
+
+    public function pickDisplay()
+    {
+        
     }
 
 

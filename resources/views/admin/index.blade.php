@@ -36,15 +36,18 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @foreach($user as $item)
                                             <tr>
-                                                <td>Donna Snider</td>
-                                                <td>dona@gmail.com</td>
-                                                <td>+62895606731113</td>
-                                                <td>Paket A Pantai</td>
-                                                <td>3</td>
-                                                <td></td>
-                                                <td>21/11/2022</td>
+                                                <td>{{ $item->Nama }}</td>
+                                                <td>{{ $item->Email }}</td>
+                                                <td>{{ $item->HP }}</td>
+                                                <td>{{ $item->Paket }}</td>
+                                                <td>{{ $item->JumlahOrang }}</td>
+                                                <td>{{ $item->image }}</td>
+                                                <td>{{ $item->TanggalPesanan }}</td>
+                                                
                                             </tr>
+                                            @endforeach
                                         </tbody>
                                         <tfoot>
                                             <tr>

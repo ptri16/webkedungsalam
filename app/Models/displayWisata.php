@@ -5,12 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class wisata extends Model
+class displayWisata extends Model
 {
     use HasFactory;
-
-    protected $table = 'wisatas';
-    protected $fillable = ['Nama','Keterangan', 'Kategori', 'Benefit', 'Harga'];
+    protected $table = 'display_wisata';
+    protected $fillable = ['display1','display2','display3'];
     protected $guarded = ['id'];
     protected $primary_key = 'id';
 
@@ -19,6 +18,4 @@ class wisata extends Model
     protected $hidden = [
                         'created_at', 'updated_at',
                         ];
-
-
 }

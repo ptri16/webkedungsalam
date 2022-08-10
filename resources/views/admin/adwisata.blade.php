@@ -18,6 +18,39 @@
                                 </div>
                             </div>
                             <div class="card-body">
+                                <h3 class="card-title">Display</h4>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered verticle-middle table-responsive-sm">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Nama</th>
+                                                <th scope="col">Kategori</th>
+                                                <th scope="col">Benefit</th>
+                                                <th scope="col">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($data as $item)
+                                                <tr>
+                                                <td>{{ $item -> id }}</td>
+                                                <td>{{ $item -> Nama }}</td>
+                                                <td>{{ $item -> Kategori }}</td>
+                                                <td>{{ $item -> Benefit }}</td>
+                                                <td><span>
+                                                    <a href="{{route('upWisata', ['id' => $item->id])}}" class="mr-4" data-toggle="tooltip"
+                                                            data-placement="top" title="Edit"><i class="fa-solid fa-minus"></i> </a>
+                                                    </span>
+                                                </td>
+                                                
+                                            </tr> 
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Data</h4>
                                 <div class="table-responsive">
                                     <table class="table table-bordered verticle-middle table-responsive-sm">
                                         <thead>
@@ -31,20 +64,29 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>A</td>
-                                                <td>Pantai</td>
-                                                <td>Use this service pack to give your company the necessary impulse to become an industry leader</td>
-                                                <td>Transportasi, Penginapan, dll</td>
-                                                <td>250.000,00</td>
-                                                <td><span><a href="{{ url('/editWisata') }}" class="mr-4" data-toggle="tooltip"
+                                            @foreach ($data as $item)
+                                                <tr>
+                                                <td>{{ $item -> Nama }}</td>
+                                                <td>{{ $item -> Kategori }}</td>
+                                                <td>{{ $item -> Keterangan }}</td>
+                                                <td>{{ $item -> Benefit }}</td>
+                                                <td>Rp.{{ number_format($item->Harga) }}</td>
+                                                <td><span>
+                                                    <a href="{{route('upWisata', ['id' => $item->id])}}" class="mr-4" data-toggle="tooltip"
                                                             data-placement="top" title="Edit"><i
-                                                                class="fa fa-pencil color-muted"></i> </a><a
-                                                            href="javascript:void()" data-toggle="tooltip"
+                                                                class="fa fa-pencil color-muted"></i> </a>
+                                                    <a
+                                                            href="{{route('delWisata', ['id' => $item->id])}}" class="mr-4" data-toggle="tooltip"
                                                             data-placement="top" title="Close"><i
-                                                                class="fa fa-close color-danger"></i></a></span>
+                                                                class="fa fa-close color-danger"></i></a>
+                                                    
+                                                    <a href="{{route('disWisata', ['id' => $item->id])}}"  data-toggle="tooltip"><i class="fa-solid fa-check"></i></a>
+                                                    </span>
                                                 </td>
-                                            </tr>
+                                                
+                                            </tr> 
+                                            @endforeach
+                                           
                                         </tbody>
                                     </table>
                                 </div>
@@ -57,4 +99,6 @@
         <!--**********************************
             Content body end
         ***********************************-->
+        
+        
 @endsection

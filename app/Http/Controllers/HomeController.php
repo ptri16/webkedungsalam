@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\pesanan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -25,7 +25,9 @@ class HomeController extends Controller
     
     public function redirect()
     {
-        return view('admin/index');
+        $user = pesanan::all();
+        // return view('admin/adadmin', compact('users'));
+        return view('admin/index',compact('user'));
     }
 
     public function index()

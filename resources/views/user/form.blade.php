@@ -8,24 +8,25 @@
                 <h1>FORM PEMESANAN<h1>
             </div>
             <div class="form">
-                <form action="" data-toggle="validator" data-focus="false">
+                <form action="{{ route('daftarPesanan') }}" method="POST" enctype="multipart/form-data" data-toggle="validator" data-focus="false">
+                    @csrf
                     <div class="form-group">
-                        <input type="text" class="form-control-input" id="cname" required>
+                        <input type="text" class="form-control-input" id="cname" required name='nama'>
                         <label class="label-control" for="cname">Nama</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control-input" id="cemail" required>
+                        <input type="email" class="form-control-input" id="cemail" name='email' required>
                         <label class="label-control" for="cemail">Email</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <input type="tel" class="form-control-input" id="cnumber" required>
+                        <input type="tel" class="form-control-input" id="cnumber" name='number' required>
                         <label class="label-control" for="cnumber">Nomor Handphone</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <select class="form-control form-control-lg" id="cpaket" required style="font-size:15px;">
+                        <select class="form-control form-control-lg" id="cpaket" name='paket' required style="font-size:15px;">
                             <option>------- Pilih Paket Wisata -------</option>
                             <option>Paket A Wisata Pantai</option>
                             <option>Paket B Wisata Pantai</option>
@@ -40,22 +41,22 @@
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <input type="date" class="form-control-input" id="cdate" required>
+                        <input type="date" class="form-control-input" id="cdate" name='tanggal' required>
                         <label class="label-control" for="cdate">Tanggal Booking</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <input type="number" class="form-control-input" id="ctpeserta" required>
+                        <input type="number" class="form-control-input" id="ctpeserta" name='jumlah' required>
                         <label class="label-control" for="ctpeserta">Jumlah Orang</label>
                         <div class="help-block with-errors"></div>
                     </div>
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         <input type="number" class="form-control-input" id="ctpeserta" required>
                         <label class="label-control" for="ctpeserta">Jumlah Orang</label>
                         <div class="help-block with-errors"></div>
-                    </div>
+                    </div> --}}
                     <div class="form-group">
-                        <select class="form-control form-control-lg" id="cbayar" required style="font-size:15px;">
+                        <select class="form-control form-control-lg" id="cbayar" name='bayar' required style="font-size:15px;">
                             <option>------- Pilih Metode Pembayaran -------</option>
                             <option>BNI-</option>
                             <option>BRI-</option>
@@ -70,7 +71,7 @@
                         <div class="drop-file">
                             <span class="btn-file">Browser File</span>
                             <span class="name-file">or Drag and Drop Files</span>
-                            <input type="file" class="input-text" multiple>
+                            <input type="file" class="input-text" name='image' multiple>
                         </div>
                     </div>
                     <div class="form-group">
