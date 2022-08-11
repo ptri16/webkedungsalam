@@ -14,38 +14,41 @@
                              SEJARAH
                         </div>
                         <h2>Sejarah Desa Kedungsalam</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est culpa impedit similique nesciunt, esse debitis ullam quam amet neque, dolores corporis corrupti nostrum, molestiae ut aliquam delectus assumenda necessitatibus qui!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, odit? A blanditiis atque illo quidem pariatur esse, labore accusantium at eaque porro, expedita animi. Ad pariatur fugiat vitae consectetur id?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias doloremque asperiores magni. Mollitia, ut nulla! Exercitationem sequi impedit, ut ab dolor, necessitatibus eum atque debitis, non quia saepe ullam.
+                        <p>Dahulu kala, sekitar tahun 1800-an di suatu tempat yang masih berupa hutan belantara, belum terdapat satu manusia pun yang menempati hutan belantara tersebut. Lalu setelah Perang Diponegoro melawan penjajah Belanda,
+                         tempat tersebut kedatangan manusia satu per satu yang menyelamatkan diri dari penjajah Belanda yang membuka hutan tersebut sebagai pemukiman sementara.</p>
+                        <p>Para priayi berasal dari Kerajaan Mataram Jawa Tengah, diantaranya Eyang Kasan Mentawi, Eyang Thalib, Eyang Singo Rejo, Eyang Kasiyo, dan Eyang Dawut. Karena tempat tersebut dirasa aman 
+                        dan bisa ditempati untuk bermukim, maka priayi tersebut membuka hutan yang dibuat untuk lahan pertanian serta pemukiman warga.
                         </p>
-                        <!-- <div class="testimonial-author">
-                            <a class="btn-solid-lg page-scroll" href="#services">Baca Selengkapnya >></a>
-                        </div> -->
+                        
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-7">
                     <div class="image-container">
-                        <img class="img-fluid" src="/img/intro-office.jpg" alt="alternative">
+                        <img class="img-fluid" src="images/Sejarah.jpg" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-5">
                     <div class="text-container">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est culpa impedit similique nesciunt, esse debitis ullam quam amet neque, dolores corporis corrupti nostrum, molestiae ut aliquam delectus assumenda necessitatibus qui!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, odit? A blanditiis atque illo quidem pariatur esse, labore accusantium at eaque porro, expedita animi. Ad pariatur fugiat vitae consectetur id?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias doloremque asperiores magni. Mollitia, ut nulla! Exercitationem sequi impedit, ut ab dolor, necessitatibus eum atque debitis, non quia saepe ullam.
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ut harum consectetur illo, inventore voluptas, incidunt error cupiditate perferendis in nesciunt cumque pariatur nulla voluptatem placeat delectus quaerat! Inventore, incidunt.
+                        <p>Perlu diketahui bahwa Eyang Kasan Mentawi adalah yang membabat hutan di daerah Kebun Rejo sekitar Pasar Wage. Adapun Mbah Singorejo yang membabat hutan di daerah Salamrejo dan sekitarnya. 
+                        Eyang Kasiyo yang membabat hutan di Dusun Salamrejo Timur yang berbatasan dengan Desa Sumbermanjing Kulon dengan petilasannya yaitu 
+                        masjid tertua di daerah Kucur Salamrejo. Dan yang membabat hutan di daerah Dusun Ngliyep adalah Eyang Thalib.</p>
+                        <p>Suatu hari, Eyang Thalib bersama sahabatnya menuju daerah sumber mata air dengan niat untuk Siram Jamas (mandi hajat untuk puasa ritual Jawa) dan disitu terdapat pohon salam di sekitar sumber dan aura di sekitar 
+                        situ sangat mistis. Sehingga daerah tersebut dinamakan Kedungsalam dan nama tersebut dipakai desa hingga saat ini.
                         </p>
-                        <!-- <div class="testimonial-author">
-                            <a class="btn-solid-lg page-scroll" href="#services">Baca Selengkapnya >></a>
-                        </div> -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-7">
                     <div class="text-container">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est culpa impedit similique nesciunt, esse debitis ullam quam amet neque, dolores corporis corrupti nostrum, molestiae ut aliquam delectus assumenda necessitatibus qui!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, odit? A blanditiis atque illo quidem pariatur esse, labore accusantium at eaque porro, expedita animi. Ad pariatur fugiat vitae consectetur id?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias doloremque asperiores magni. Mollitia, ut nulla! Exercitationem sequi impedit, ut ab dolor, necessitatibus eum atque debitis, non quia saepe ullam.
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ut harum consectetur illo, inventore voluptas, incidunt error cupiditate perferendis in nesciunt cumque pariatur nulla voluptatem placeat delectus quaerat! Inventore, incidunt.
+                        <p>“Kedung” mempunyai arti tempat yg luas dan “Salam” mempunyai arti selamat. Dengan harapan mudah mudahan warga Kedungsalam mendapatkan keberkahan, 
+                        iman yang suci, serta berbakti kepada leluhur yang telah berupaya mendirikan desa tersebut. Suatu perjalanan di lain waktu dan tempat, desa mengalami Pageblug 
+                        atau bencana. Selama satu bulan masyarakat sakit dan meninggal. Maka Kyai Talib bersama pengikutnya bersemedi memohon pada Yang Maha Esa agar mendapat petunjuk atau 
+                        wangsit supaya mendatangi sahabatnya yang bernama Eyang Atun yang tinggal di Dukuh Wegalih di Desa Wonokerto Kecamatan Bantur untuk bersama sama memohon kepada Yang Maha 
+                        Esa untuk dihindarkan dari Pageblug ini. Alhasil karena wangsit dari Yang Maha Esa, Eyang Atun mendapatkan petunjuk untuk melakukan Larung Sesaji di Gunung Kombang 
+                        Pantai Ngliyep dengan sarana prasarana pelabuhan di Gunung Kombang per tanggal 15 Rabiul Awal tahun 1880. Selanjutnya Pageblug tersebut sirna dari Desa Kedungsalam berkat 
+                        upaya dari Kyai tersebut dan Eyang Thalib sebagai kepala desa pertama di Desa Kedungsalam sekitar tahun 1883, dilanjutkan kepala desa kedua Eyang Slamet, kepala desa ketiga Eyang 
+                        Kartowijoyo, kepala desa keempat Eyang Supiyadi, kepala desa kelima Mbah Sayidi Sastrowijoyo, kepala desa keenam Mbah Radiyo, kepala desa ketujuh Bapak K.Perwito, kepala desa kedelapan 
+                        Bapak Budi Susianto, kepala desa kesembilan Ibu Sutina, kepala desa kesepuluh pejabat sementara Drs.Suharto, dan dilanjutkan kepala desa kesebelas Bapak Misdi yang sampai saat ini sudah 
+                        menjabat 3 periode.
                         </p>
                         <!-- <div class="testimonial-author">
                             <a class="btn-solid-lg page-scroll" href="#services">Baca Selengkapnya >></a>

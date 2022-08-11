@@ -14,7 +14,7 @@
                             </a>
                         </div>
                         <br>    
-                        <h3>Follow Aria On Social Media</h3>
+                        <h3>Follow Media Sosial Kami Lainnya</h3>
 
                         <span class="fa-stack">
                             <a href="#your-link">
